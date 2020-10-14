@@ -22,8 +22,17 @@ docker run --it --rm --name [container_name] -p 5000:5000 [image_name]
 ```
 
 ## Snapshots
+
+### Docker run command
+
 ![docker_run](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/lab4_Microservice_Experiment/docker_run.png)
+
+### Docker image
+
 ![docker_image](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/lab4_Microservice_Experiment/docker_image.png)
+
+### Website
+
 ![website](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/lab4_Microservice_Experiment/website.png)
 
 ## Difference between Docker container and Virtual Machine
