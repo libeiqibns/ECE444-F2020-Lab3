@@ -18,7 +18,7 @@ The Dockerfile is located at root directory.
 Run the following command to start the docker container:
 
 ```
-docker run --it --rm --name [container_name] -p 5000:5000 
+docker run --it --rm --name [container_name] -p 5000:5000 [image_name]
 ```
 
 ## Snapshots
