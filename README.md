@@ -1,29 +1,31 @@
-# ECE444-F2020-Lab3
+# ECE444-F2020-Lab4
 Author: Beiqi Li
 
 This repo is a clone of
 https://github.com/miguelgrinberg/flasky
 
-## Activity 1
+## To build the project:
 
-![snapshot for a1](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/master/images/a1.png)
+Run the following command to build the docker image:
 
-## Activity 2
+```
+docker build -t [image_name]:[version_number] .
+```
 
-![a2_1](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/master/images/a2_1.png)
+The Dockerfile is located at root directory.
 
-![a2_2](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/master/images/a2_2.png)
+## To run the project:
+Run the following command to start the docker container:
 
-![a2_3](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/master/images/a2_3.png)
+```
+docker run --it --rm --name [container_name] -p 5000:5000 
+```
 
-![a2_4](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/master/images/a2_4.png)
+## Snapshots
+![docker_run](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/lab4_Microservice_Experiment/docker_run.png)
+![docker_image](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/lab4_Microservice_Experiment/docker_image.png)
+![website](https://github.com/libeiqibns/ECE444-F2020-Lab3/blob/lab4_Microservice_Experiment/website.png)
 
-## Activity 3
+## Difference between Docker container and Virtual Machine
 
-SQL: SQL databases are known as "relational" databases, meaning different types of data are stored in different tables. 
-Records in a table can have references to records in other tables, called a relationship. Relationships are the essence of SQL
-databases. This allows SQL to store data more efficiently. But on the other hand, this introduces overhead for querying.
-
-NoSQL: All databases that do not follow the rules of SQL are collectively referred to as "NoSQL". There are many designs of NoSQL.
-Since NoSQL does not have the concept of relationship, it is usually less compact than SQL since there are duplicate information. 
-However, this may bring some benefit in query performance.
+Docker containers share the same OS kernel. Virtual Machines do not. Therefore, Virtual Machines consume more resources and have longer startup time. However, since Virtual Machines do not share the OS kernel, VMs provide better isolation. This is considered as a security advantage.
